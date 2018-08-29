@@ -37,8 +37,8 @@ const forms = [
     done: true
   },{
     name: 'hc',
-    lines: 5397,
-    done: false
+    lines: 6875,
+    done: true
   },{
     name: 'ca',
     lines: 1870,
@@ -60,7 +60,7 @@ function howManyLinesDone(arr) {
 }
 
 function percentageDone(arr) {
-  const linesDone = arr.filter((ele) => ele.done).map((ele) => ele.lines).reduce((acc, counter) => acc + counter, 0) + 737
+  const linesDone = arr.filter((ele) => ele.done).map((ele) => ele.lines).reduce((acc, counter) => acc + counter, 0)
   const linesTotal = arr.map((ele) => ele.lines).reduce((acc, counter) => acc + counter, 0)
   return ((linesDone / linesTotal) * 100).toFixed(2)
 }
@@ -84,4 +84,5 @@ console.log('percentage done', percentageDone(forms))
 //              CHA cha-form.json line 0 - 324 only 3 hours work this day //41% done
 // day 7 Monday CHA cha-form.json line 324 - line 4109 -- lost a few hours 1pm - 311pm was spent on that one little bug
 // day 8 Tuesday CHA cha-form.json line 4109 - 4538 --> 62% done
-//               HC hc-form.json line 0 - 737
+//               HC hc-form.json line 0 - 737 --> 66% done
+// day 9 Wednesday HC hc-form.json line 737 - 6875 --> 91% done
