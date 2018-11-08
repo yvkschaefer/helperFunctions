@@ -41,8 +41,8 @@ const forms = [
     done: true
   },{
     name: 'ca',
-    lines: 1870,
-    done: false
+    lines: 1898,
+    done: true
   }
 ]
 
@@ -85,4 +85,6 @@ console.log('percentage done', percentageDone(forms))
 // day 7 Monday CHA cha-form.json line 324 - line 4109 -- lost a few hours 1pm - 311pm was spent on that one little bug
 // day 8 Tuesday CHA cha-form.json line 4109 - 4538 --> 62% done
 //               HC hc-form.json line 0 - 737 --> 66% done
-// day 9 Wednesday HC hc-form.json line 737 - 6875 --> 91% done
+// day 9 Wednesday HC hc-form.json line 737 - 6875
+//                 CA ca-form.json line 0 - 258 --> 92% done
+// day 10 Thursday CA ca-form.json line 258 - 1898 //2pm
